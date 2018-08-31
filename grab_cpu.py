@@ -133,11 +133,13 @@ def main():
     	    wb.save(host_invent)
     	except:
             continue
-
+	
+    mail_account = open('mail/account.txt', 'r')
+    account = mail_account.read().split(':')
     host_mail = 'smtp.gmail.com'
     port_mail = 587
-    MYADD = 'alert.nocdps@ap1.co.id'
-    MYPASS = 'Jardat6104'
+    MYADD = account[0] 
+    MYPASS = account[1]
     mail_msg = 'mail/message.txt'
     mail_dst = 'mail/contact_mail.txt'
     mails = get_contacts(mail_dst)
