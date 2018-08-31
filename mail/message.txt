@@ -1,0 +1,6 @@
+Dear MS Team,
+
+This is CPU report for all network device in IGNR Airport for ${MONTH}.
+Have a nice day!
+
+Yours Truly
